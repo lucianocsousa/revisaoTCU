@@ -7,8 +7,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>FlashCards TCU</h1>
-  <div id="app">Carregando...</div>
+  <header>
+    <h1>FlashCards – Caminho das Pedras (TCU)</h1>
+    <p class="subtitle">Clique no cartão para ver a resposta • Use ← / → para navegar</p>
+  </header>
+
+  <div id="controls">
+    <button id="shuffle">Embaralhar</button>
+    <button id="reset">Reiniciar</button>
+    <button id="fav">⭐ Favoritos</button>
+    <button id="review">Revisar Erradas</button>
+  </div>
+
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="card-face front">
+        <span id="q">…</span>
+      </div>
+      <div class="card-face back">
+        <span id="a">…</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 – Projeto de estudo para o concurso de Auditor TCU</footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
